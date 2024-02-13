@@ -1,0 +1,29 @@
+:root {
+  font-size: 10px;
+}
+
+#content {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  padding: 200px;
+}
+
+.menu-item {
+  padding: 20px;
+  border: 1px white solid;
+}
+
+.menu-item-image {
+  height: 200px;
+  width: auto;
+}
+
+.menu-item-name {
+  font-size: 2.5rem;
+}
+
+.menu-item-price {
+  font-size: 2rem;
+}
