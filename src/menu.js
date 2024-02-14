@@ -22,8 +22,11 @@ let menu = [
 ];
 
 function createMenu() {
-  const content = document.getElementById('content');
-  content.innerHTML = '';
+  const container = document.getElementById('container');
+  container.innerHTML = '';
+
+  const content = document.createElement('div');
+  content.setAttribute('id', 'content-menu');
 
   for (let i = 0; i < 9; i++) {
     const item = document.createElement('div');
@@ -46,6 +49,7 @@ function createMenu() {
     item.appendChild(image);
     item.appendChild(price);
   }
+  container.appendChild(content);
 }
 
 export default createMenu;
