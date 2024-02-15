@@ -7,7 +7,7 @@ function home() {
   container.innerHTML = '';
 
   const content = document.createElement('div');
-  content.setAttribute('id', 'content');
+  content.setAttribute('id', 'content-home');
 
   header(content);
 
@@ -36,15 +36,20 @@ function headerOverlay(header) {
   const headerBig = document.createElement('h1');
   headerBig.id = 'header-big';
 
-  const topText = document.createElement('h2');
+  const topText = document.createElement('h3');
   topText.id = 'header-top';
 
+  const bottomText = document.createElement('h2');
+  bottomText.id = 'header-bottom';
+
   headerBig.textContent = 'ORDER ONLINE';
-  topText.textContent = 'Delicious food all the time';
+  bottomText.textContent = 'Delicious food all the time';
+  topText.textContent = 'Always ready to serve'
 
   header.appendChild(headerOverlay);
-  headerOverlay.appendChild(headerBig);
   headerOverlay.appendChild(topText);
+  headerOverlay.appendChild(headerBig);
+  headerOverlay.appendChild(bottomText);
 }
 
 export default home;
