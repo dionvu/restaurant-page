@@ -4,8 +4,7 @@ const phoneNumber = '699-420-6969';
 const slogan = 'CALL US';
 const slogan2 = 'WE MIGHT EVEN ANSWER';
 
-function createContent() {
-
+function contact() {
   const container = document.getElementById('container');
   container.innerHTML = '';
 
@@ -34,4 +33,4 @@ function createContent() {
   container.appendChild(content);
 }
 
-export default createContent;
+export default contact;

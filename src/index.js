@@ -1,17 +1,14 @@
 import './style/nav.css'
-import createMenu from './menu.js'
-import createContact from './contact.js'
-import createHome from './home.js'
+import home from './home.js'
+import menu from './menu.js'
+import contact from './contact.js'
 
-// Nav buttons
 const homeButton = document.getElementById('home-button');
 const menuButton = document.getElementById('menu-button');
 const contactButton = document.getElementById('contact-button');
 
-homeButton.addEventListener('click', createHome);
-menuButton.addEventListener('click', createMenu);
-contactButton.addEventListener('click', createContact);
+homeButton.addEventListener('click', home);
+menuButton.addEventListener('click', menu);
+contactButton.addEventListener('click', contact);
 
-// Starting page
-createHome();
-
+home();

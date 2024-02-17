@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'LibreBaskerville';
+  src: url('/fonts/LibreBaskerville-Regular.ttf') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+#footer {
+  font-family: 'LibreBaskerville';
+  display: flex;
+  align-items: flex-end;
+  height: 100px;
+  padding: 40px;
+}

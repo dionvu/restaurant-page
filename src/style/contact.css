@@ -1,15 +1,20 @@
-:root {
-  font-size: 10px;
+@font-face {
+  font-family: 'LibreBaskerville';
+  src: url('/fonts/LibreBaskerville-Regular.ttf') format('woff');
+  font-weight: 700;
+  font-style: normal;
 }
 
-body {
-  height: 100vh;
+:root {
+  font-size: 10px;
+  font-family: 'LibreBaskerville';
 }
 
 #content {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 100px;
 }
 
 #contact-container {

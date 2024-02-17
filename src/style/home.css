@@ -1,6 +1,13 @@
 @font-face {
   font-family: 'GreatVibes';
   src: url('/fonts/GreatVibes-Regular.ttf') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LibreBaskerville';
+  src: url('/fonts/LibreBaskerville-Regular.ttf') format('woff');
   font-weight: 700;
   font-style: normal;
 }
@@ -37,14 +44,14 @@
   left: 0;
   right: 0;
 
-  background-color: rgba(0, 0, 0, 0.6);
-
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 #header-big {
   font-size: 8rem;
   margin: 0;
   margin-bottom: 5px;
+  font-family: 'LibreBaskerville';
 }
 
 #header-top {
@@ -53,8 +60,49 @@
 }
 
 #header-bottom {
-  color: #cc241d;
+  color: darkorange;
   font-size: 5rem;
   margin: 0;
   font-family: 'GreatVibes';
+}
+
+#gallery-top {
+  padding: 10px;
+  text-align: center;
+  height: 100px;
+
+  font-family: GreatVibes;
+  font-size: 3rem;
+  color: darkorange;
+  font-weight: 700;
+  margin: 0;
+}
+
+#gallery-header {
+  padding-top: 40px;
+  font-family: LibreBaskerville-Regular;
+  color: black;
+  text-align: center;
+  margin: 0;
+  font-size: 4rem;
+}
+
+#content-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  height: 100%;
+}
+
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.gallery-img {
+  height: 300px;
+  width: 400px;
+  object-fit: cover;
 }
