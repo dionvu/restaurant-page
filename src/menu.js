@@ -11,15 +11,15 @@ class Item {
 }
 
 let items = [
-  new Item('Burger', 100, ""),
-  new Item('Hot Dog', 100, ""),
-  new Item('Burger', 100, ""),
-  new Item('Hot Dog', 100, ""),
-  new Item('Burger', 100, ""),
-  new Item('Hot Dog', 100, ""),
-  new Item('Burger', 100, ""),
-  new Item('Hot Dog', 100, ""),
-  new Item('Hot Dog', 100, "")
+  new Item('Salomon', 100, ""),
+  new Item('Samon', 100, ""),
+  new Item('Fishy Fish', 100, ""),
+  new Item('Smmmmhhmon', 100, ""),
+  new Item('monoSam', 100, ""),
+  new Item('Rice', 100, ""),
+  new Item('Fish Rice', 100, ""),
+  new Item('Rice Fish', 100, ""),
+  new Item('Sammy', 5, "")
 ];
 
 function menu() {
@@ -43,6 +43,8 @@ function menu() {
   container.appendChild(header);
   container.appendChild(headerBottom);
   container.appendChild(content);
+
+  footer(container);
 }
 
 function createMenuItem(content, itemNumber) {

@@ -1,8 +1,6 @@
 import './style/contact.css'
-
-const phoneNumber = '699-420-6969';
-const slogan = 'CALL US';
-const slogan2 = 'WE MIGHT EVEN ANSWER';
+import footer from './footer'
+import mars from '../assets/mars.jpg'
 
 function contact() {
   const container = document.getElementById('container');
@@ -14,23 +12,24 @@ function contact() {
   const contactContainer = document.createElement('div');
   contactContainer.setAttribute('id', 'contact-container');
 
-  const phone = document.createElement('div');
-  phone.setAttribute('id', 'phone-number');
-  phone.textContent = phoneNumber;
+  const location = document.createElement('img');
+  location.src = mars;
 
-  const text = document.createElement('p');
-  text.classList.add('slogan');
-  text.textContent = slogan;
+  const header = document.createElement('h1');
+  header.id = 'contact-header';
+  header.textContent = 'Our general location.';
 
-  const text2 = document.createElement('p');
-  text2.classList.add('slogan');
-  text2.textContent = slogan2;
+  const header2 = document.createElement('h2');
+  header2.id = 'contact-header2';
+  header2.textContent = 'You will serve us';
 
-  contactContainer.appendChild(phone);
-  contactContainer.appendChild(text);
-  contactContainer.appendChild(text2);
   content.appendChild(contactContainer);
   container.appendChild(content);
+  contactContainer.appendChild(location);
+  contactContainer.appendChild(header);
+  contactContainer.appendChild(header2);
+
+  footer(container);
 }
 
 export default contact;

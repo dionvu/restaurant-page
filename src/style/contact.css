@@ -1,4 +1,11 @@
 @font-face {
+  font-family: 'GreatVibes';
+  src: url('/fonts/GreatVibes-Regular.ttf') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'LibreBaskerville';
   src: url('/fonts/LibreBaskerville-Regular.ttf') format('woff');
   font-weight: 700;
@@ -10,6 +17,10 @@
   font-family: 'LibreBaskerville';
 }
 
+body {
+  background: #230C0f;
+}
+
 #content {
   display: flex;
   justify-content: center;
@@ -18,18 +29,20 @@
 }
 
 #contact-container {
+  background: #230C0f;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 300px;
 }
 
-#phone-number {
-  font-size: 8rem;
-  margin: 50px;
+#contact-container>img {
+  height: 500px;
 }
 
-.slogan {
-  margin: 10px;
-  font-size: 4rem;
+#contact-header2 {
+  font-size: 5rem;
+  font-family: 'GreatVibes';
+  color: darkorange;
 }

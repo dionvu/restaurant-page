@@ -24,7 +24,7 @@
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
-  padding: 150px;
+  padding: 100px;
 }
 
 .menu-item {
@@ -48,12 +48,6 @@
 .menu-item:hover {
   background: #D9594C;
   transition: background 3s ease;
-}
-
-.menu-item-image:hover {
-
-  height: 210px;
-  transition: height 2s ease;
 }
 
 .menu-item-name {
