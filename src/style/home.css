@@ -64,6 +64,7 @@
   font-size: 5rem;
   margin: 0;
   font-family: 'GreatVibes';
+  text-align: center;
 }
 
 #gallery-top {
@@ -81,17 +82,17 @@
 #gallery-header {
   padding-top: 40px;
   font-family: LibreBaskerville-Regular;
-  color: black;
   text-align: center;
   margin: 0;
   font-size: 4rem;
+  color: white;
 }
 
 #content-main {
+  background: #230C0f;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: white;
   height: 100%;
 }
 
@@ -99,10 +100,12 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+  margin-bottom: 100px;
 }
 
 .gallery-img {
   height: 300px;
   width: 400px;
   object-fit: cover;
+  border-radius: 10px;
 }

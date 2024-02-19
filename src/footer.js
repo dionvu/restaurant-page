@@ -6,7 +6,7 @@ function footer(container) {
 
   const copyright = document.createElement('h2');
   copyright.id = 'copyright';
-  copyright.textContent = '@ 2024 Copyright Dion Vu. Some rights reserved.';
+  copyright.textContent = '@ 2024 Copyright Dion Vu. Not many rights reserved.';
 
   footer.appendChild(copyright);
   container.appendChild(footer);
